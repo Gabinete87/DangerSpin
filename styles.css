@@ -5,7 +5,6 @@ body {
     text-align: center;
     padding: 20px;
 }
-
 .container {
     background-color: #333;
     padding: 30px;
@@ -14,25 +13,19 @@ body {
     margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
-
 label {
     display: block;
     margin-top: 20px;
     font-size: 1.1em;
 }
-
 input[type="number"] {
     padding: 10px;
     font-size: 1.2em;
     border: none;
     border-radius: 8px;
-    width: 120px;
+    width: 100px;
     margin-top: 10px;
-    text-align: center;
-    background-color: #555;
-    color: white;
 }
-
 button {
     margin-top: 25px;
     padding: 12px 24px;
@@ -44,28 +37,22 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
-
 button:hover {
     background-color: #ff2222;
 }
-
 .resultado {
     margin-top: 25px;
     font-size: 1.5em;
 }
-
 .red {
     color: #ff4d4d;
 }
-
 .black {
-    color: #000;
+    color: #333;
     background-color: white;
     padding: 0 5px;
     border-radius: 3px;
 }
-
 .green {
-    color: #00ff00;
-    font-weight: bold;
+    color: greenyellow;
 }
