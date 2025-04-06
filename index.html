@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DangerSpin</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .ruleta-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 30px auto;
+        }
+
+        .ruleta {
+            width: 100%;
+            height: 100%;
+            transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+            transform: rotate(0deg);
+        }
+
+        .flecha {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0; 
+            height: 0; 
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid red;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -12,8 +39,13 @@
         <p>¡Gira la ruleta europea y prueba tu suerte! Créditos: <span id="creditos">100</span></p>
 
         <div>
-            <label for="numeroElegido">Número a jugar (0-36):</label><br>
+            <label for="numeroElegido">Número a jugar (0-36):</label>
             <input type="number" id="numeroElegido" min="0" max="36">
+        </div>
+
+        <div class="ruleta-container">
+            <div class="flecha"></div>
+            <img src="ruleta.png" id="ruleta" class="ruleta" alt="Ruleta">
         </div>
 
         <button id="girarBtn">Girar</button>
@@ -23,6 +55,10 @@
         <h3>Historial</h3>
         <ul id="historial"></ul>
     </div>
+
+    <audio id="sonidoGiro" src="giro.mp3"></audio>
+    <audio id="sonidoGana" src="gana.mp3"></audio>
+    <audio id="sonidoPierde" src="pierde.mp3"></audio>
 
     <script src="script.js"></script>
 </body>
