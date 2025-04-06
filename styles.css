@@ -26,8 +26,11 @@ input[type="number"] {
     font-size: 1.2em;
     border: none;
     border-radius: 8px;
-    width: 100px;
+    width: 120px;
     margin-top: 10px;
+    text-align: center;
+    background-color: #555;
+    color: white;
 }
 
 button {
@@ -56,10 +59,13 @@ button:hover {
 }
 
 .black {
-    color: #333;
+    color: #000;
     background-color: white;
     padding: 0 5px;
     border-radius: 3px;
 }
 
 .green {
+    color: #00ff00;
+    font-weight: bold;
+}
